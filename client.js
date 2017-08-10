@@ -1,4 +1,4 @@
-var url = "http://127.0.0.1:2020/blockNumber";
+var url = "/blockNumber";
 
 function updateBlockNumber(){
 	var xmlHttp = new XMLHttpRequest();

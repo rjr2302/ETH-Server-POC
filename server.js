@@ -26,7 +26,7 @@ fs.readFile("test.html", (error, html) => {
 			
 			if (file == "/") {
 				response.setHeader("Content-Type", "text/html");
-				response.setHeader("Allow-Access-Control-Origin", "*");
+				//response.setHeader("Allow-Access-Control-Origin", "*");
 				response.write(html);
 				response.end();
 			}
