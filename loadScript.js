@@ -1,9 +1,10 @@
 var minBlockHeight = 0;
 var minConfirmations = 15;
+var minETH = 100;
 
 if (web3.eth.accounts.length == 0){
-	console.log("New account without password set as coinbase. Use console or Mist to create secure account.");
-	web3.personal.newAccount("");
+	console.log("Creating new Ethereum wallet.");
+	personal.newAccount();
 }
 
 setInterval(function() {
@@ -13,7 +14,7 @@ setInterval(function() {
 		minBlockHeight = web3.eth.blockNumber + minConfirmations;
 	}
 	
-	else if(web3.eth.getBalance(web3.eth.coinbase) < 100* Math.pow(10,18)){
+	else if(web3.eth.getBalance(web3.eth.coinbase) < minETH * Math.pow(10,18)){
 		miner.start(1);
 	}
 	
