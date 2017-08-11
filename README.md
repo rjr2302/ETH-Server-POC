@@ -5,9 +5,11 @@ This project was developed for my personal use in setting up a Ethereum developm
 
 ### Install instructions:
 
-    npm install web3@^0.20.0
+Run the following command:
 
-Clone into your development directory. Run start.bat. One of the command terminals will prompt you for a password. After that, the setup is complete.
+    npm install
+
+Run start.bat. One of the command terminals will prompt you for a password. This password will be for your coinbase account. After that, the setup is complete.
 
 ### Usage instructions:
 
