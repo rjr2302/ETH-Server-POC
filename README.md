@@ -7,8 +7,8 @@ This project was developed for my personal use in setting up a Ethereum developm
 
     npm install web3@^0.20.0
 
-### Clone into your development directory. Run start.bat. One of the command terminals will prompt you for a password. After that, the setup is complete.
+Clone into your development directory. Run start.bat. One of the command terminals will prompt you for a password. After that, the setup is complete.
 
-Usage instructions:
+### Usage instructions:
 
 Run start.bat whenever you wish to develop. A server is hosted at http://localhost:2020, and the RPC client for geth is hosted at http://localhost:2302. Mist will automatically connect to the test-net.
